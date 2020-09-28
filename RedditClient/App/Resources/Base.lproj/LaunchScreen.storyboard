@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_reddit" translatesAutoresizingMaskIntoConstraints="NO" id="umd-e3-0aY">
+                                <rect key="frame" x="131" y="327" width="152" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="umd-e3-0aY" secondAttribute="height" multiplier="1:1" id="RYq-dl-HDg"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgU-kK-L8Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="c4O-yY-7io">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reddit_robot" translatesAutoresizingMaskIntoConstraints="NO" id="hOA-rs-PIL">
+                                            <rect key="frame" x="115" y="356" width="184" height="184"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="hOA-rs-PIL" secondAttribute="height" multiplier="1:1" id="2dY-yO-qyL"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hOA-rs-PIL" firstAttribute="leading" secondItem="c4O-yY-7io" secondAttribute="leading" constant="115" id="Lwz-i9-hmG"/>
+                                        <constraint firstAttribute="trailing" secondItem="hOA-rs-PIL" secondAttribute="trailing" constant="115" id="RoZ-bb-wjF"/>
+                                        <constraint firstItem="hOA-rs-PIL" firstAttribute="centerY" secondItem="c4O-yY-7io" secondAttribute="centerY" id="j8y-C1-Hja"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.3411764705882353" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hOA-rs-PIL" firstAttribute="centerX" secondItem="umd-e3-0aY" secondAttribute="centerX" id="HvS-Uh-RY1"/>
+                            <constraint firstItem="HgU-kK-L8Z" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Mtw-fF-WXV"/>
+                            <constraint firstAttribute="bottom" secondItem="HgU-kK-L8Z" secondAttribute="bottom" id="UsT-vs-Qff"/>
+                            <constraint firstItem="umd-e3-0aY" firstAttribute="centerY" secondItem="hOA-rs-PIL" secondAttribute="centerY" constant="-45" id="UvF-wM-gTD"/>
+                            <constraint firstItem="HgU-kK-L8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bzj-wa-TkL"/>
+                            <constraint firstItem="HgU-kK-L8Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nl8-5f-FDx"/>
+                            <constraint firstItem="hOA-rs-PIL" firstAttribute="width" secondItem="umd-e3-0aY" secondAttribute="height" multiplier="23:19" id="oIi-fU-3Z2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_reddit" width="1200" height="1200"/>
+        <image name="reddit_robot" width="518" height="518"/>
+    </resources>
+</document>

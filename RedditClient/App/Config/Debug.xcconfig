@@ -1,0 +1,14 @@
+//
+//  Debug.xcconfig
+//  RedditClient
+//
+//  Created by Ruba Vitalii on 26.09.2020.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+REDDIT_DOMAIN = https:\/\/www.reddit.com
+REDDIT_API_PATH = /api/v1
+REDDIT_OAUTH_URL = https:\/\/oauth.reddit.com/
+REDDIT_KEY = bzZIaXlSdHFLdVljOUE6

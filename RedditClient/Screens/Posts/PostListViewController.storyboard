@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post List View Controller-->
+        <scene sceneID="1FU-X0-2FM">
+            <objects>
+                <viewController storyboardIdentifier="PostListViewController" id="2P6-2F-My1" customClass="PostListViewController" customModule="RedditClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9f-aJ-6xe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6L-Mo-5R5">
+                                <rect key="frame" x="160" y="413" width="94.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="410" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Md2-mF-yRc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Tl-QD-2yr"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="b6L-Mo-5R5" firstAttribute="centerY" secondItem="1Tl-QD-2yr" secondAttribute="centerY" id="7zE-4d-4EU"/>
+                            <constraint firstItem="Md2-mF-yRc" firstAttribute="trailing" secondItem="1Tl-QD-2yr" secondAttribute="trailing" id="8hj-v3-l2L"/>
+                            <constraint firstItem="b6L-Mo-5R5" firstAttribute="centerX" secondItem="1Tl-QD-2yr" secondAttribute="centerX" id="Ljj-M6-nkB"/>
+                            <constraint firstAttribute="bottom" secondItem="Md2-mF-yRc" secondAttribute="bottom" id="ZN8-Ri-6ff"/>
+                            <constraint firstItem="Md2-mF-yRc" firstAttribute="top" secondItem="s9f-aJ-6xe" secondAttribute="top" id="aZu-Cx-ELn"/>
+                            <constraint firstItem="Md2-mF-yRc" firstAttribute="leading" secondItem="1Tl-QD-2yr" secondAttribute="leading" id="rSx-J5-bow"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="sZc-sD-uwW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="noDataLabel" destination="b6L-Mo-5R5" id="74Z-9I-xd4"/>
+                        <outlet property="tableView" destination="Md2-mF-yRc" id="HSH-5P-zds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59W-cZ-IsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
